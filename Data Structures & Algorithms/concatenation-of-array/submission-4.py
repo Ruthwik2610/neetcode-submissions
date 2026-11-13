@@ -1,0 +1,7 @@
+class Solution:
+    def getConcatenation(self, nums: List[int]) -> List[int]:
+        n=len(nums)
+        ans=[0]*(2*n)
+        for i , c in enumerate(nums):
+            ans[i] =ans[n+i]=c
+        return ans
